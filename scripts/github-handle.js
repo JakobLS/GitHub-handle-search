@@ -3,8 +3,8 @@
 
 function formatQueryParameters(params) {
     // Function for formatting the query parameters into a url.
-    // Using the encodeURIComponent for formatting might be useful in some cases. 
-    const queryItems = Object.keys(params).map(key => `${key}=${params[key]}`);
+    const queryItems = Object.keys(params)
+    .map(key => `${encodeURIComponent(key)}=${encodeURIComponent(params[key])}`);
     return queryItems.join('&');
 }
 
