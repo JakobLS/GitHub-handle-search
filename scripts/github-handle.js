@@ -1,10 +1,6 @@
 'use-strict';
 
 
-
-
-
-
 function formatQueryParameters(params) {
     // Function for formatting the query parameters into a url.
     // Using the encodeURIComponent for formatting might be useful in some cases. 
@@ -24,7 +20,7 @@ function createGithubURL(userName, nbrResults=25) {
 }
 
 function getGithubHandle(urlString) {
-    // Function for fetching breed image
+    // Function for fetching the search term
     fetch(urlString)
         .then(response => response.json())
         .then(responseJson => displayResults(responseJson))
@@ -62,8 +58,8 @@ function displayResults(responseJson) {
     $('.js-output-section').html(outputString);
 }
 
-// Functionality for when the Search button is clicked
 function searchButtonClicked() {
+    // Functionality for when the Search button is clicked
     $('#js-search-form').submit(event => {
         event.preventDefault();
         let searchTerm = $('.js-search-entry').val();
