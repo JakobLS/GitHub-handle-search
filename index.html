@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adding descriptive info and image for sharing -->
+    <meta name="description" content="Search for GitHub handles and retreive their information.">
+    <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.ZT8yItNrXwj4FRWXz5Lf8AHaD4%26pid%3DApi&f=1">
+
+    <title>Search GitHub Handles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap">
+    <link rel="stylesheet" href="styles/github-handle.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="header center">
+            <h1>Search GitHub Handles</h1>
+        </div>
+        <div class="main-section">
+            <div class="left-side">
+                <div class="input-section center">
+                    <form id="js-search-form">
+                        <input id="search-term" class="js-search-entry" type="text" autofocus="on" placeholder="E.g. ZuzooVn">
+                        <button type="submit" class="btn js-search-btn">Search</button>
+                    </form>
+                </div>
+                <div class="next-section">
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="output-section js-output-section">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="module" src="scripts/github-handle.js"></script>
+</body>
+</html>
+

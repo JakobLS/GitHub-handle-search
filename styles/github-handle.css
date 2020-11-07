@@ -1,0 +1,105 @@
+
+
+p, h1, form label {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    transition: all 300ms ease-out;
+    text-decoration:none;
+    border-bottom: 2px solid #1783C4;
+}
+
+a:link      {color: black}
+a:visited   {color: black}
+a:hover     {color: #1783C4; border-bottom: none}
+a:active    {color: #1783C4}
+
+img {
+    margin-top: 10vh;
+    max-height: 40vh;
+    max-width: 40vw;
+    border-radius: 10px;
+}
+
+img + img {
+    margin-top: 5vh;
+}
+
+.center {
+    display:flex;
+    align-items: center;     /* Vertical alignment */
+    justify-content: center; /* Horizontal alignment */
+}
+
+.header {
+    width: 100vw;
+    height: 10vh;
+}
+
+.main-section {
+    display:flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100vw;
+}
+
+.input-section {
+    height: 50vh;
+    width: 50vw;
+}
+
+.input-section p {
+    font-size: 20px;
+}
+
+.next-section {
+    display:flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: fixed;
+    width: 50vw;
+    height: 40vh;
+}
+
+form input[type=text]#search-term {
+    width: 250px;
+    height: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.btn {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 6px;
+    color: white;
+    background-color: #1783C4;
+    border: 0;
+    padding: 9px 20px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #8ecae6;
+}
+
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    height: 90vh;
+    width: 50vw;
+    padding-top: 20vh;
+}
+
+.output-element {
+    border-radius: 6px;
+    padding-left: 2vw;
+    margin-right: 2vw;
+    background-color: #f8f9fa;
+}
+
+.output-element + .output-element {
+    margin-top: 2vh;
+}
